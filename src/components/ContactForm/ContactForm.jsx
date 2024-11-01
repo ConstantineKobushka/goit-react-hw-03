@@ -12,7 +12,6 @@ const ContactForm = ({ onAddContact }) => {
   const numberId = useId();
 
   const handleSubmit = (values, actions) => {
-    console.log(values);
     onAddContact({ ...values, id: nanoid() });
     actions.resetForm();
   };
