@@ -1,5 +1,4 @@
 import Contact from '../Contact/Contact';
-import { nanoid } from 'nanoid';
 
 import styles from './ContactList.module.css';
 
@@ -8,7 +7,7 @@ const ContactList = ({ contacts, onDelete }) => {
     <ul className={styles.list}>
       {contacts.map((contact) => (
         <Contact
-          key={nanoid()}
+          key={contact.id}
           userName={contact.name}
           userPhone={contact.number}
           userId={contact.id}
