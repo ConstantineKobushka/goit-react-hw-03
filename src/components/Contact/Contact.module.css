@@ -1,22 +1,25 @@
-.item {
-  min-width: 250px;
-  border: 1px solid #000;
-  border-radius: 10px;
-  padding: 10px;
+.contactItem {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 20px;
+  min-width: 270px;
+  border-radius: 10px;
+  border: 1px solid #000;
+  padding: 10px;
 }
-.textInner {
-  display: flex;
-  gap: 10px;
+.contactText + .contactText {
+  margin-top: 10px;
 }
-.textName {
-  margin-bottom: 10px;
-}
-.btn {
+.contactBtn {
   padding: 5px;
   border-radius: 5px;
   border: 1px solid #808080;
+  transition: border-color 0.25s ease-in;
+}
+
+@media only screen and (min-width: 1440px) {
+  .contactBtn:hover,
+  .contactBtn:focus-visible {
+    border: 1px solid #000000;
+  }
 }

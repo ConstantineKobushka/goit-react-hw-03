@@ -6,17 +6,16 @@ const SearchBox = ({ searchValue, onSearch }) => {
   const searchInput = useId();
   return (
     <div className={styles.searchBox}>
-      <label className={styles.label} htmlFor={searchInput}>
+      <label className={styles.searchLabel} htmlFor={searchInput}>
         Find contact by name
       </label>
       <input
-        className={styles.input}
-        type='text'
+        className={styles.searchInput}
+        type="text"
+        name="search"
         id={searchInput}
         value={searchValue}
-        onChange={(event) => {
-          onSearch(event.target.value);
-        }}
+        onChange={event => onSearch(event.target.value)}
       />
     </div>
   );

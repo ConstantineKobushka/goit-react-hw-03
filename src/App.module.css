@@ -1,5 +1,21 @@
+.container {
+  max-width: 425px;
+  padding: 10px 10px;
+  margin: 0 auto;
+}
 .title {
-  margin-top: 25px;
-  margin-left: 25px;
   margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 10px 25px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+  }
 }
